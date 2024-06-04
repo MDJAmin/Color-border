@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+@keyframes colorful {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.square{
+    width: 16px;
+    height: 16px;
+    background-color: #272727;
+    box-shadow: 0 0 2px #343434;
+    margin: 2px;
+    transition: all 1s;
+}
+
+.square:hover{
+    transition-duration: 0s;
+}
